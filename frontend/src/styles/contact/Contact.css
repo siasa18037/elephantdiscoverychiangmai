@@ -1,0 +1,22 @@
+.Contactpage {
+    width: 100%;
+    background-color: rgb(1, 51, 40);
+}
+
+.Contactpage .head {
+    height: 30px;
+}
+
+.Contactpage .line {
+    width: 100%;
+    max-width: 1140px;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    margin: 0 auto; /* Center the line */
+}
+
+@media (max-width: 768px) {
+    .Contactpage .line {
+       display: none;
+    }
+}

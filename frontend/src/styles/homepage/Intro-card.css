@@ -1,0 +1,41 @@
+.intro {
+    /* background-color: antiquewhite; */
+	background-color: #ede1b5;
+	padding-top: 6.5rem;
+	padding-bottom: 3rem;
+}
+
+.intro .text-container {
+	margin-bottom: 3rem;
+}
+
+.intro .section-title {
+	margin-bottom: 0.5rem;
+}
+
+.intro h2 {
+	margin-bottom: 1.375rem;
+}
+
+.intro .testimonial-author {
+	color: #484a46;
+}
+
+/* Hover Animation */
+.intro .image-container {
+	text-align: center;
+	overflow: hidden;
+	border-radius: 0.25rem;
+}
+
+.intro .image-container img {
+	margin: 0;
+	border-radius: 0.25rem;
+	transition: all 0.3s;
+}
+
+.intro .image-container:hover img {
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+} 

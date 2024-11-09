@@ -1,0 +1,79 @@
+.counter {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(1, 51, 40);
+    color: white;
+}
+
+.counter .image-container {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.counter .image-container iframe {
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 360px;
+}
+
+.counter h2 {
+    margin-bottom: 1.375rem;
+}
+
+.counter .list-unstyled {
+    margin-bottom: 1.5rem;
+}
+
+.counter .list-unstyled .media {
+    display: flex;
+    align-items: center;
+}
+
+.counter .list-unstyled .media .fas {
+    color: #ffffff;
+    font-size: 0.5rem;
+    line-height: 1.375rem;
+    margin-right: 0.625rem;
+}
+
+.counter .list-unstyled .media i {
+    color: rgb(47, 219, 16);
+    font-size: 16px ;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.counter .list-unstyled .media .media-body {
+    flex: 1;
+    color: rgb(245, 245, 245);
+    font-size: 14px;
+}
+
+.counter #counter {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.counter #counter .cell {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.counter #counter .counter-value {
+    display: inline-block;
+    margin-bottom: 0.125rem;
+    color: #ffd000;
+    font: 700 2.875rem/3.25rem "Montserrat", sans-serif;
+    vertical-align: middle;
+}
+
+.counter #counter .counter-info {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    vertical-align: middle;
+    text-align: left;
+}

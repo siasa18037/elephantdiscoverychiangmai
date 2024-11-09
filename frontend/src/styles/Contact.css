@@ -1,0 +1,224 @@
+.contact {
+    padding-top: 6.625rem;
+    padding-bottom: 5.625rem;
+    background-color: rgb(237, 225, 181);
+}
+
+.contact .text-container {
+    margin-bottom: 3rem;
+}
+
+.contact .section-title {
+    margin-bottom: 0.5rem;
+}
+
+.contact h2 {
+    margin-bottom: 1.375rem;
+}
+
+.contact .list-unstyled {
+    margin-bottom: 2.25rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.contact .list-unstyled .fas,
+.contact .list-unstyled .fab {
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+    color: rgb(1, 51, 40);
+}
+
+.contact .list-unstyled .fa-phone {
+    vertical-align: 3%;
+}
+
+.contact h3 {
+    margin-bottom: 1rem;
+}
+
+.contact .fa-stack {
+    margin-right: 0.25rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.125rem;
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+.contactForm .text-container {
+    margin-bottom: 30px;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contactForm p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.list-unstyled {
+    padding: 0;
+    margin: 0 0 20px 0;
+    list-style: none;
+}
+
+.li-space-lg > li {
+    margin-bottom: 10px;
+}
+
+li.address {
+    display: flex;
+    align-items: center;
+}
+
+li.address i {
+    margin-right: 10px;
+    color: rgb(1, 51, 40);
+}
+
+li i {
+    margin-right: 10px;
+    color: rgb(1, 51, 40);
+}
+
+li a {
+    color: rgb(1, 51, 40);
+    text-decoration: none;
+}
+
+.social-icon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fa-stack a {
+    display: inline-block;
+    width: 2em;
+    transition: 0.2s;
+    padding-top: 3px;
+    height: 2em;
+    border-radius: 50%;
+    background-color: rgb(1, 51, 40);
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+}
+
+.fa-stack a:hover {
+    background-color: rgb(237, 225, 181);
+    color: rgb(1, 51, 40);
+}
+
+
+.contactForm {
+    margin-top: 20px;
+}
+
+.form-control-input,
+.form-control-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(1, 51, 40);
+    border-radius: 4px;
+    background-color:rgb(237, 225, 181);
+    color: black;
+    font-weight: 200;
+}
+
+.form-control-textarea {
+    min-height: 125px;
+}
+
+.form-control-submit-button {
+    background-color: rgb(1, 51, 40);
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid rgb(1, 51, 40);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-control-input:focus,
+.form-control-textarea:focus {
+    border-color: rgb(1, 51, 40);
+    outline: none;
+}
+
+.form-control-submit-button {
+    margin-top: 20px;
+    background-color: rgb(1, 51, 40);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: 2px solid rgb(1, 51, 40);;
+}
+
+.form-control-submit-button:hover {
+    background-color: rgb(237, 225, 181);
+    color: rgb(1, 51, 40);
+}
+
+.checkbox {
+    margin-right: 10px;
+    font-size: 12px;
+    
+}
+
+.checkbox input{
+    margin-right: 10px;
+}
+
+.checkbox a{
+    text-decoration: none;
+}
+
+
+.contactForm .form-group {
+    position: relative;
+}
+
+.contactForm .form-group label {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: rgb(237, 225, 181);
+    padding: 0 5px;
+    color: rgb(1, 51, 40);
+    font-size: 0.875rem;
+}
+
+.contact .loading {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: 16px solid #ffffff; /* Light grey */
+    border-top: 16px solid rgb(1, 51, 40); /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

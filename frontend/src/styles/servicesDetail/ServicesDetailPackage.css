@@ -1,0 +1,170 @@
+
+.ServicesDetailPackage {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(1, 51, 40);
+    padding-bottom: 50px;
+  }
+
+  .ServicesDetailPackage .head h2{
+   text-align: center;
+   padding-bottom: 30px;
+   padding-top: 30px;
+   color: white;
+  }
+
+  .ServicesDetailPackage .container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .ServicesDetailPackage .item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(1, 51, 40);
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+  }
+  
+  .ServicesDetailPackage .main {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    width: 100%;
+  }
+  
+  .ServicesDetailPackage .detail {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .ServicesDetailPackage .detail h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .ServicesDetailPackage .detail p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .ServicesDetailPackage  .amount {
+    text-align: right;
+    padding-left: 20px;
+  }
+  
+  .ServicesDetailPackage  .amount h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: rgb(231, 189, 0);
+  }
+  
+  .ServicesDetailPackage  .amount span {
+    font-size: 18px;
+    color: #a4a4a4;
+  }
+  
+  .ServicesDetailPackage .amount p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .ServicesDetailPackage .booking {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .ServicesDetailPackage .booking .container{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .ServicesDetailPackage .booking-input {
+    border-radius: 5px;
+    background-color: rgb(1, 51, 40);
+  }
+  
+  .ServicesDetailPackage .input-btn {
+    background-color: rgb(1, 51, 40);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ServicesDetailPackage .input-field {
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    /* padding-left: 15px; */
+    background-color: rgb(1, 51, 40);
+  }
+  
+  .ServicesDetailPackage .book-btn {
+    background-color: rgb(1, 51, 40);
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ServicesDetailPackage .book-btn:hover {
+    background-color: white;
+    color: rgb(1, 51, 40);
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .ServicesDetailPackage {
+        width: 100%;
+        padding: 0px;
+        background-color: rgb(1, 51, 40);
+        padding-bottom: 50px;
+    }
+
+    .ServicesDetailPackage .container {
+        grid-template-columns: 1fr ;
+    }
+    .ServicesDetailPackage .main {
+        grid-template-columns: 1fr;
+      }
+
+      .ServicesDetailPackage  .amount {
+        margin-top: 30px;
+        text-align: center;
+        padding-left: 20px;
+      }
+
+      .ServicesDetailPackage .input-field {
+        /* padding-left: 7px; */
+        color: white;
+      }
+
+
+
+  }

@@ -1,0 +1,157 @@
+.ServicesDetailHead {
+    padding-top: 70px;
+    width: 100%;
+    background-color: rgb(237, 225, 181);
+}
+
+.ServicesDetailHead .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    padding: 50px 20px;
+    margin: 0 auto;
+}
+
+.ServicesDetailHead .images {
+    width: 100%;
+}
+
+.ServicesDetailHead .main-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+
+.ServicesDetailHead .small-img-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ServicesDetailHead .scroll-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.ServicesDetailHead .scroll-btn.left {
+    left: -20px;
+}
+
+.ServicesDetailHead .scroll-btn.right {
+    right: -20px;
+}
+
+.ServicesDetailHead .small-img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+
+}
+
+.ServicesDetailHead .item-img {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100px;
+}
+
+.ServicesDetailHead .item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ServicesDetailHead .item-img img:hover {
+    transform: scale(1.01);
+
+}
+
+.ServicesDetailHead .detail {
+    width: 100%;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.ServicesDetailHead .head h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.ServicesDetailHead .head p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.ServicesDetailHead .list-box {
+    margin-top: 20px;
+}
+
+.ServicesDetailHead .list-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.ServicesDetailHead .list-item i {
+    color: #28a745;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .ServicesDetailHead {
+        padding-top: 60px;
+    }
+
+    
+    .ServicesDetailHead .container {
+        grid-template-columns: 1fr;
+    }
+
+    .ServicesDetailHead .item-img {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 80px;
+    }
+
+    .ServicesDetailHead .scroll-btn.left {
+        left: 0px;
+    }
+
+    .ServicesDetailHead .scroll-btn.right {
+        right: 0px;
+    }
+
+    .ServicesDetailHead .detail {
+        padding: 0px;
+    }
+}

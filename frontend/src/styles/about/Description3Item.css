@@ -1,0 +1,74 @@
+.cards-2 {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 51, 40);
+    padding-top: 20px;
+}
+
+.cards-2 .container {
+    max-width: 1200px;
+}
+
+.cards-2 .card {
+    margin-top: 30px;
+    margin-bottom: 2.5rem;
+    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+}
+
+.cards-2 .fa-stack {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-2 .fa-stack .hexagon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: #ede1b5;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+}
+
+.cards-2 .fa-stack i {
+    font-size: 2.5rem;
+    color:  #013328; 
+    z-index: 1;
+}
+
+
+.cards-2 .fa-stack-1x {
+    color: #fff;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.cards-2 .card-body {
+    padding: 0;
+}
+
+.cards-2 .card-title {
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+}
+
+.cards-2 .card h4 {
+    color: #000000;
+}
+
+.cards-2 .card p {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+

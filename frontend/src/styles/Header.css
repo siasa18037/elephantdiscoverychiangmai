@@ -1,0 +1,185 @@
+/* HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  
+}
+
+
+
+.logo {
+  height: 40px;
+}
+
+.brand {
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* ลบเส้นขีดเส้นใต้ */
+}
+
+.brand h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none; /* ลบเส้นขีดเส้นใต้ */
+}
+
+#brand1 {
+  color: rgb(231, 189, 0);
+}
+
+#brand2 {
+  color: rgb(225, 225, 225);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nav-item {
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.13px;
+  text-decoration: none; /* ลบเส้นขีดเส้นใต้ */
+  margin-left: 2.5rem;
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover {
+  color: #E3DCD2;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  width: 0;
+  height: 0.15rem;
+  transform: translateX(-50%);
+  background-color: #E3DCD2;
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+
+  #brand2 {
+    display: none;
+  }
+
+  header::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #013328;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+  }
+
+  header::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+  }
+
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: grid;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #100C0D;
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    grid-template-columns: 1fr;
+  }
+
+  #check:checked ~ .navbar {
+    height: auto; /* Adjust as needed */
+  }
+
+  .nav-item {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    background-color: #100C0D;
+  }
+
+  .nav-item:hover::after {
+    width: auto;
+  }
+
+  #check:checked ~ .navbar .nav-item {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(0.15s * var(--i));
+  }
+}
+
+
+@media (min-width: 700px) {
+  header {
+    background-color: transparent; /* กำหนดให้ไม่มีพื้นหลังเมื่อ header อยู่บนสุด */
+    transition: background-color 0.5s ease; /* เพิ่ม transition สำหรับการเปลี่ยนสีพื้นหลัง */
+  }
+  
+  header.scrolled {
+    background-color: #013328; /* สีพื้นหลังเมื่อเลื่อนลงมา */
+  }
+}

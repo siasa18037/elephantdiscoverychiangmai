@@ -1,0 +1,138 @@
+.services {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    background-color: rgb(1, 51, 40);
+}
+
+.services .container {
+    max-width: 1000px;
+}
+
+.services .section-title {
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.services h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* card */
+.services .allcard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.services .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.services .card {
+    padding: 20px;
+    background-color: rgb(1, 51, 40);
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.services .card:hover {
+    border-width: 3px;
+    padding: 18px; /* ลด padding ลงเพื่อชดเชยการขยายขอบ */
+}
+
+.services .card a {
+    text-decoration: none;
+}
+
+.services .card-body {
+    margin: 20px;
+}
+
+.services .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: rgb(231, 189, 0);
+    text-align: center;
+}
+
+.services .card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.services .list-unstyled {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.services .media {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.services .media i {
+    color: #29a745;
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.services .media-body {
+    font-size: 1rem;
+    color: rgb(108, 117, 125);
+}
+
+.services .price {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(108, 117, 125);
+    margin-top: 1rem;
+}
+
+
+.services .btns {
+    background-color: rgb(1, 51, 40);
+    width: 100%;
+    border: none;
+    padding: 6px 0px;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid white;
+}
+
+.services .btns:hover {
+    background-color: white;
+    color: rgb(1, 51, 40);
+    transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+    .services .allcard {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .services .card {
+        padding: 2px;
+    }
+
+    .services .card:hover {
+        border-width: 3px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,16 @@
+.ServicesDetailDocument {
+
+    width: 100%;
+    background-color: rgb(237, 225, 181);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ServicesDetailDocument .item{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.ServicesDetailDocument .item p{
+    margin-left: 10px;
+}

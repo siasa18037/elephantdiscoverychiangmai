@@ -1,0 +1,100 @@
+.accordion {
+    background-color: #ede1b5;
+    padding-bottom: 3rem;
+    padding-top: 48px;
+}
+/* Hover Animation */
+.accordion .image-container {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+
+.accordion .image-container img {
+    margin: 0;
+    border-radius: 1rem;
+    transition: all 0.3s;
+}
+
+.accordion .image-container:hover img {
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+} 
+
+.accordion .item {
+    margin-bottom: 2rem;
+    
+}
+
+.accordion h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 28.409px;
+    margin-top: 30px;
+}
+
+.accordion h4 {
+    margin-bottom: 0;
+
+}
+
+.accordion span[aria-expanded="true"] .circle-numbering,
+.accordion span[aria-expanded="false"] .circle-numbering {
+    
+    display: inline-block;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.875rem;
+    border: 0.125rem solid rgb(1, 51, 40);
+    border-radius: 50%;
+    background-color: rgb(1, 51, 40);
+    color: #fff;
+    font: 700 1rem/2.125rem "Montserrat", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.accordion span[aria-expanded="false"] .circle-numbering {
+    border: 0.125rem solid black;
+    background-color: transparent;
+    color: black;
+}
+
+.accordion .item:hover span[aria-expanded="false"] .circle-numbering {
+    border: 0.125rem solid rgb(1, 51, 40);
+    color: rgb(1, 51, 40);
+}
+
+.accordion .accordion-title {
+    display: inline-block;
+    width: 70%;
+    margin-top: 0.125rem;
+    margin-bottom: 0.25rem;
+    color: black;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.accordion .item:hover .accordion-title {
+    color: rgb(1, 51, 40);
+}
+
+.accordion span[aria-expanded="true"] .accordion-title {
+    color: rgb(1, 51, 40);
+}
+
+.accordion .accordion-body {
+    margin-left: 3.125rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.accordion .collapse.show .accordion-body {
+    max-height: 1000px; 
+}

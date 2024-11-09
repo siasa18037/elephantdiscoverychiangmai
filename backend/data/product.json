@@ -1,0 +1,153 @@
+[
+    {
+        "id": "10001",
+        "name": "Full day",
+        "detail": "Full day program with 9-12 persons per day, including shared and private options.",
+        "icon_detail": [
+            {
+                "icon": "bx bx-time",
+                "detail": "9:00 am - 17.00 pm"
+            },
+            {
+                "icon": "bx bx-car",
+                "detail": "Pick up time : 8:30 - 9:00 AM"
+            },
+            {
+                "icon": "bx bxs-ship",
+                "detail": "Bamboo rafting to reach the camp"
+            },
+            {
+                "icon": "bx bx-baguette",
+                "detail": "Prepare elephant Foods"
+            },
+            {
+                "icon": "bx bx-food-menu",
+                "detail": "Information with our Feed & elephants & walk"
+            },
+            {
+                "icon": "bx bx-bowl-rice",
+                "detail": "Lunch Time"
+            },
+            {
+                "icon": "bx bx-capsule",
+                "detail": "Make Medicine & Bathe of elephants"
+            }
+        ],
+        "images": [
+            "/assets/images/for ser/IMG_2333.JPG",
+            "/assets/images/product/4f125451027ca1d4338d65742346a7dc.jpg",
+            "/assets/images/for ser/image copy 19.png",
+            "/assets/images/for ser/image copy 18.png",
+            "/assets/images/for ser/image copy 12.png",
+            "/assets/images/for ser/image copy 16.png",
+            "/assets/images/for ser/image copy.png"
+        ],
+        "package": [
+            {
+                "id_package": "900001",
+                "name": "Shared Elephant",
+                "detail": "1 elephant for 3 persons",
+                "amount": "2800"
+            },
+            {
+                "id_package": "900002",
+                "name": "Private",
+                "detail": "Private experience",
+                "amount": "4800"
+            }
+        ],
+        "document": [
+            {
+                "head": "Inclusions",
+                "detail": "Transportation, meals, seasonal fruits, water, local insurance, uniforms, food for elephants, photos."
+            },
+            {
+                "head": "Total Time",
+                "detail": "Approximately 8-9 hours, including 4.5-5 hours with the elephants."
+            },
+            {
+                "head": "Activities",
+                "detail": "Bamboo rafting, elephant feeding, organic medicine preparation, walking and bathing with elephants."
+            },
+            {
+                "head": "What to bring",
+                "detail" : "spare clothes, swimming suit flipflop, insectspay, sneakers, suncream camera and personal medicine."
+            },
+            {
+                "head": "Pick up time",
+                "detail" : "8:30 - 9:00 AM meet u at your place"
+            }
+        ]
+    },
+    {
+        "id": "10002",
+        "name": "Half Day",
+        "detail": "Half day program with 9-12 persons per day, focusing on elephant care and feeding.",
+        "icon_detail": [
+            {
+                "icon": "bx bx-time",
+                "detail": "8:00 am - 12.00 pm"
+            },
+            {
+                "icon": "bx bx-car",
+                "detail": "Pick up time : 6:50 - 7:15 AM"
+            },
+            {
+                "icon": "bx bx-food-menu",
+                "detail": "Information with our Feed & elephants & walk"
+            },
+            {
+                "icon": "bx bx-capsule",
+                "detail": "Make Medicine & Bathe of elephants"
+            },
+            {
+                "icon": "bx bx-bowl-rice",
+                "detail": "Lunch Time"
+            }
+        ],
+        "images": [
+            "/assets/images/for ser/image copy 3.png",
+            "/assets/images/for ser/image copy 6.png",
+            "/assets/images/for ser/image copy 7.png",
+            "/assets/images/for ser/image copy.png",
+            "/assets/images/for ser/image copy 8.png",
+            "/assets/images/for ser/image copy 9.png"
+        ],
+        "package": [
+            {
+                "id_package": "900003",
+                "name": "Shared Elephant",
+                "detail": "1 elephant for 3 persons",
+                "amount": "1800"
+            },
+            {
+                "id_package": "900004",
+                "name": "Private",
+                "detail": "Private experience",
+                "amount": "2500"
+            }
+        ],
+        "document": [
+            {
+                "head": "Inclusions",
+                "detail": "Transportation, seasonal fruits, water, local insurance, uniforms, food for elephants, photos."
+            },
+            {
+                "head": "Total Time",
+                "detail": "Approximately 5-6 hours, including 2-3 hours with the elephants."
+            },
+            {
+                "head": "Activities",
+                "detail": "Elephant feeding, organic medicine preparation, bathing with elephants."
+            },
+            {
+                "head": "What to bring",
+                "detail" : "spare clothes, swimming suit flipflop, insectspay, sneakers, suncream camera and personal medicine."
+            },
+            {
+                "head": "Pick up time",
+                "detail" : "6:50 - 7:15 AM Meet u at your place"
+            }
+        ]
+    }
+]

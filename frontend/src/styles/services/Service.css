@@ -1,0 +1,40 @@
+.service {
+    width: 100%;
+    margin-top: 70px;
+    background-color: rgb(237, 225, 181);
+  }
+  
+  .service-title h4 {
+    font-size: 40px;
+    color: rgb(51, 51, 51);
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+  
+  .service-wrap {
+    padding: 20px;
+  }
+  
+  .service-icon {
+    font-size: 22.833px;
+    color: rgb(33, 37, 41);
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .service-wrap h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+  }
+  
+  .service-wrap p {
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+  
+
+  

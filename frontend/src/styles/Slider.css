@@ -1,0 +1,124 @@
+/* styles/homepage/Slider.css */
+.slider {
+  padding: 6rem 0;
+  background-color: rgb(237, 225, 181);
+}
+
+.slider h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.slider .p-heading {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider .slider-container {
+  position: relative;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider .swiper-container {
+  position: static;
+  width: 100%;
+  text-align: center;
+}
+
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+  color: #333;
+}
+
+.slider .swiper-button-prev:focus,
+.slider .swiper-button-next:focus {
+  /* even if you can't see it chrome you can see it on mobile device */
+  outline: none;
+}
+
+.slider .card {
+  position: relative;
+  border: none;
+  background-color: rgb(237, 225, 181);
+  padding: 2rem;
+  margin: 1rem;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider .card-image {
+  width: 100px;
+  height: 100px;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slider .card-body {
+  padding-top: 1rem;
+}
+
+.slider .testimonial-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.slider .testimonial-author {
+  font-weight: bold;
+  color: #333;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 10px; /* Adjust as needed */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Adjust as needed */
+}
+
+
+
+@media (min-width: 768px) {
+  .slider .swiper-container {
+    width: 80%;
+  }
+
+  .slider .card {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider .swiper-container {
+    width: 100%;
+  }
+
+  .slider .card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
