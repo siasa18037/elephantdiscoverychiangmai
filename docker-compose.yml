@@ -8,6 +8,7 @@ services:
       - PORT=4000
       - REACT_APP_BACKEND_URL=http://127.0.0.1:4000
       - REACT_APP_FRONTEND_URL=https://elephantdiscoverychiangmai.org
+      - ALLOWED_ORIGINS=https://elephantdiscoverychiangmai.org,https://www.elephantdiscoverychiangmai.org
 
   frontend:
     build:
