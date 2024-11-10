@@ -70,11 +70,12 @@ const NewBooking = () => {
         }
     }, [id_package, productData]);
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         const package_text = `${selectedProduct.name} | ${selectedPackage.name}`;
-
+    
         const newBooking = {
             firstName: e.target['first-name'].value,
             lastName: e.target['last-name'].value,
@@ -88,13 +89,13 @@ const NewBooking = () => {
             amountPerPerson: selectedPackage.amount,
             amount: selectedPackage.amount * person,
         };
-
+    
         setLoading(true);
-
+    
         try {
             const response = await axios.post(`${BACKEND_URL}/api/booking`, newBooking);
-            console.log(response.data.Booking);
             const bookingId = response.data.Booking.bookingId;
+    
             navigate(`/book/booking/${bookingId}`);
         } catch (error) {
             console.error('Error submitting booking:', error);
@@ -106,6 +107,7 @@ const NewBooking = () => {
             setLoading(false);
         }
     };
+    
 
     if (loading_first) {
         return <div className="loading_2">Loading...</div>;
