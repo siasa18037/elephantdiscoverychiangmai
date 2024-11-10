@@ -5,6 +5,8 @@ const transporter = require('../config');
 const contactFilePath = path.join(__dirname, '../data/contact.json');
 let contact = require(contactFilePath);
 
+const email_admin = 'elephantdiscovery@gmail.com'
+
 exports.getAllContact = async (req, res) => {
     try {
         res.status(200).json(contact);
@@ -19,7 +21,7 @@ exports.sendContact = async (req, res) => {
     // ข้อความอีเมล
     let mailOptions = {
         from: '"Web server" <your_email@example.com>', // sender address
-        to: '66010559@kmitl.ac.th', // list of receivers
+        to: email_admin, // list of receivers
         subject: 'Contact Form (ข้อความ Contact)', // Subject line
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`, // plain text body
         html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`, // html body
