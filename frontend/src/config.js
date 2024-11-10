@@ -1,4 +1,4 @@
-const BACKEND_URL = 'http://elephantdiscoverychiangmai.org:4000';
+const BACKEND_URL = 'https://elephantdiscoverychiangmai.org';
 
 
 export default BACKEND_URL;
