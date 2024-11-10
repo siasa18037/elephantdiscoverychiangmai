@@ -134,7 +134,7 @@ const Contact = () => {
                 <div className="help-block with-errors"></div>
               </div>
               <div className="form-group checkbox">
-                <input type="checkbox" id="terms" value="Agreed-to-Terms" required /> I agree with Elephant Discovery's <a href="privacy-policy.html">Privacy Policy</a>
+                <input type="checkbox" id="terms" value="Agreed-to-Terms" required /> I agree with Elephant Discovery's <a href="/privacy-policy">Privacy Policy</a>
               </div>
               <div className="form-group">
                 <button type="submit" className="form-control-submit-button" disabled={loading}>
