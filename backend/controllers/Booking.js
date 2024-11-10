@@ -63,12 +63,14 @@ exports.addNewBooking = async (req, res) => {
                                 <h2 style="color: #333333; font-size: 22px; margin-bottom: 10px;">Dear ${firstName} ${lastName},</h2>
                                 <p style="font-size: 16px; color: #555555;">Thank you for your booking request with Elephant Discovery! We’re excited to have you.</p>
                                 <p style="font-size: 16px; color: #555555;">We will send you a confirmation email within 24 hours to let you know if your booking has been successfully confirmed.</p>
+                                <p><a href="https://elephantdiscoverychiangmai.org/book/booking/${bookingId}" >Link your booking request</a></p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <h3 style="color: #2f6f4f; font-size: 18px;">Booking Details:</h3>
                                 <ul style="font-size: 16px; color: #555555; line-height: 1.6;">
+                                    <li><strong>Booking ID:</strong> ${bookingId}</li>
                                     <li><strong>Package:</strong> ${package}</li>
                                     <li><strong>Check-in Date:</strong> ${dateCheckinFormatted_email}</li>
                                     <li><strong>Number of People:</strong> ${person}</li>
