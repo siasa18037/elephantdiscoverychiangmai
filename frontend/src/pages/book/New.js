@@ -186,7 +186,9 @@ const NewBooking = () => {
                     </div>
                     <div className='submit'>
                         <div className="form-group">
-                            <button type="submit" className="form-control-submit-button">Booking</button>
+                            <button type="submit" className="form-control-submit-button">
+                                {loading ? 'Loading...' : 'Booking'}
+                            </button>
                         </div>
                     </div>
                 </form>
