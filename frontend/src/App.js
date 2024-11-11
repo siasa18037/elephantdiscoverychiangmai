@@ -27,6 +27,9 @@ import Booking from './pages/book/Booking';
 import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+// page admin
+import AdminMainpage from './pages/admin/Main';
+
 
 const App = () => {
   return (
@@ -46,6 +49,10 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path='/contact' element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+            {/* admin */}
+            <Route path="/admin/:token" element={<AdminMainpage />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
