@@ -37,7 +37,7 @@ const ServicesDetail = () => {
   }, [nameproduct, productData]);
 
   if (loading) { 
-    return <div className="loading_2">Loading...</div>;
+    return <div className="loading_2"></div>;
   }
 
   if (!product) {
