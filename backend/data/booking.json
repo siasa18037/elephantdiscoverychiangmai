@@ -13,5 +13,20 @@
     "person": "2",
     "amountPerPerson": "1800",
     "amount": 3600
+  },
+  {
+    "bookingId": "1842579912",
+    "date_booking": "2024-11-11T17:24:18.569Z",
+    "firstName": "Aleksandra",
+    "lastName": "Radecka",
+    "email": "a.radecka@gmail.com",
+    "phone": "+447864830518",
+    "message": "Hi, I would like to book the experience for Wednesday, 13th November, full day. Our hotel is Parc Borough City Resort. ",
+    "date_checkin": "2024-11-12",
+    "package_id": "900001",
+    "package": "Full day | Shared Elephant",
+    "person": "2",
+    "amountPerPerson": "2800",
+    "amount": 5600
   }
 ]
