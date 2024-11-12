@@ -33,7 +33,6 @@ const VideoBg = () => {
       </video>
       <section className="content">
         <div className="content-text">
-          // <h1>Local Foundation</h1>
           <h1 id='text1'>Elephant <span id='text2'>Discovery</span></h1>
           <h2>Chiang Mai</h2>
           <a href="#intro" className="btn light">DISCOVER NOW</a>
