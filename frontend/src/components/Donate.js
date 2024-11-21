@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Donate.css';
 
 const Donate = () => {
-  const [paymentMethod, setPaymentMethod] = useState('');
+  const [paymentMethod, setPaymentMethod] = useState('bank');
   const [errorMessage, setErrorMessage] = useState('');
 
   // const promptpayID = '0933616996';
@@ -48,7 +48,7 @@ const Donate = () => {
                           <img src={`/assets/images/prompt-pay-logo.png`} alt="PromptPay Logo"/>
                         </div>
                         <div className='qrcode'>
-                          <img src={`/assets/images/IMG_1376 3.jpg`} alt="QR Code"/>
+                          <img src={`/assets/images/QR.png`} alt="QR Code"/>
                         </div>
                       </div>
                     </div>
@@ -58,11 +58,11 @@ const Donate = () => {
                     <div className='bank-payment'>
                       <div className='bank-item'>
                         <div className='bank'>
-                          <img src='/assets/images/kplus.png' alt="Bank Logo"/>
+                          <img src='/assets/images/bangkok-bank.jpg' alt="Bank Logo"/>
                           <div className='detail'>
-                            <p>Kasikorn Bank</p>
-                            <p><span>072-2-81031-7</span></p>
-                            <p>Panthach Pannil</p>
+                            <p>Bangkok Bank</p>
+                            <p><span>358-0-93096-8</span></p>
+                            <p>Elephant Discovery Chiang Mai</p>
                           </div>
                         </div>
                       </div>
