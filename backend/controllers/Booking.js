@@ -109,6 +109,7 @@ exports.addNewBooking = async (req, res) => {
                                 <p><strong>Name:</strong> ${firstName} ${lastName}</p>
                                 <p><strong>Email:</strong> ${email}</p>
                                 <p><strong>Phone:</strong> ${phone}</p>
+                                <a href="mailto:${email}" style="color: #1a73e8; text-decoration: none;">ติดต่อกับ ${email}</a>
                             </td>
                         </tr>
                         <tr>
