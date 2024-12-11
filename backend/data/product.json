@@ -1,8 +1,8 @@
 [
     {
         "id": "10001",
-        "name": "Full day",
-        "detail": "Full day program with 9-12 persons per day, including shared and private options.",
+        "name": "Full program",
+        "detail": "Full program with 9-12 persons per day, including shared and private options.",
         "icon_detail": [
             {
                 "icon": "bx bx-time",
