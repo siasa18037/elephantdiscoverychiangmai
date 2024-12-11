@@ -13,11 +13,11 @@ const Services = () => {
         </div>
         <div className="allcard">
           <div className="card">
-            <Link to="/service/Full day" className="">
+            <Link to="/service/Full program" className="">
               <div className="row no-gutters">
                 <div className="card-body">
-                  <h3 className="card-title">Full Day</h3>
-                  <p>A full day of bonding and learning about elephant life!</p>
+                  <h3 className="card-title">Full program</h3>
+                  <p>A full program of bonding and learning about elephant life!</p>
                   <ul className="list-unstyled li-space-lg">
                     <li className="media">
                       <i className='bx bx-check'></i>
