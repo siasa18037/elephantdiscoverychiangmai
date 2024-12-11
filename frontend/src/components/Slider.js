@@ -8,35 +8,47 @@ import '../styles/Slider.css';
 
 const testimonials = [
   {
-    image: '/assets/images/reviews/IMG_2335 2.jpg',
-    text: "Good I like this trip",
-    author: 'Mr.Suppaset',
+    image: '/assets/images/reviews/1.jpg',
+    text: "A day to remember, unforgettable moments, feeding the elephants, natural medicine, bathing with elephants and much more!",
+    author: 'babi_nazareth',
+    link: 'https://www.tripadvisor.ca/ShowUserReviews-g293917-d5561734-r982052089-Elephant_Discovery_Chiang_Mai_Day_Tours-Chiang_Mai.html',
   },
   {
-    image: '/assets/images/reviews/IMG_2341.jpg',
-    text: "I purchased their service, and it was worth every bath. Highly recommend!",
-    author: 'Ms.Lawale Baigern',
+    image: '/assets/images/reviews/2.jpg',
+    text: "What an amazing experience!!! Small group (9 people), friendly staff who care with love of the beautiful Elephants.",
+    author: 'Maurits v',
+    link: 'https://www.tripadvisor.ca/ShowUserReviews-g293917-d5561734-r910012671-Elephant_Discovery_Chiang_Mai_Day_Tours-Chiang_Mai.html',
   },
   {
-    image: '/assets/images/reviews/image copy.png',
-    text: "The staff was friendly, and the experience was unforgettable. Five stars!",
-    author: 'Mr.Mike Zuiderduin',
+    image: "/assets/images/reviews/5.jpg",
+    text: "This was a great tour with an outfit that rescues elephants and treats them well. No elephant rides here! Highly recommended!",
+    author: "Stephen Marks",
+    link: 'https://www.tripadvisor.ca/ShowUserReviews-g293917-d5561734-r880739931-Elephant_Discovery_Chiang_Mai_Day_Tours-Chiang_Mai.html',
   },
   {
-    image: "/assets/images/reviews/IMG_2340.jpg",
-    text: "A truly magical experience with the elephants! The guides were knowledgeable and caring.",
-    author: "Ms.Pung"
+    image: '/assets/images/reviews/3.jpg',
+    text: "This is an awesome, amazing, great, wonderful, loving heart full place my heart stayed behind I would definitely go back.",
+    author: 'Elizabeth L',
+    link: 'https://www.tripadvisor.ca/ShowUserReviews-g293917-d5561734-r891130479-Elephant_Discovery_Chiang_Mai_Day_Tours-Chiang_Mai.html',
   },
   {
-    image: "/assets/images/reviews/IMG_8454.jpg",
-    text: "Absolutely incredible! The elephants are well cared for, and the team is amazing.",
-    author: "Mr.Panthach and  his younger brother"
+    image: "/assets/images/reviews/4.jpg",
+    text: "In my opinion one of the best experiences I've had in the last few years and I travel a lot. Highly recommend. A must do if you visit Chiang Mai",
+    author: "יאן",
+    link: 'https://www.tripadvisor.ca/ShowUserReviews-g293917-d5561734-r885269154-Elephant_Discovery_Chiang_Mai_Day_Tours-Chiang_Mai.html',
   },
-
+  
 ];
 
-const Slider = () => {
+const linkToUrl = (url) => {
+  if (url) {
+    window.open(url, '_blank'); // Open the URL in a new tab
+  } else {
+    console.warn('No URL provided for this testimonial.');
+  }
+};
 
+const Slider = () => {
   return (
     <div className="slider">
       <div className="container">
@@ -44,7 +56,14 @@ const Slider = () => {
           <div className="col-lg-12">
             <h2>Reviews</h2>
             <p className="p-heading">
-            "Your satisfaction is our top priority. We are dedicated to making every moment with us truly special. Discover what our clients have to say about their experiences!"
+              Here’s a review from one of our happy customers on{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.tripadvisor.ca/Attraction_Review-g293917-d5561734-Reviews-Elephant_Discovery_Chiang_Mai_Day_Tours-Chiang_Mai.html"
+              >
+                Tripadvisor
+              </a>
             </p>
           </div>
         </div>
@@ -71,23 +90,33 @@ const Slider = () => {
                   },
                   0: {
                     slidesPerView: 1,
-                  }
+                  },
                 }}
               >
                 {testimonials.map((testimonial, index) => (
                   <SwiperSlide key={index}>
-                    <div className="card">
-                      <img className="card-image" src={testimonial.image} alt="alternative" />
+                    <div
+                      className="card"
+                      onClick={() => linkToUrl(testimonial.link)}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      <img
+                        className="card-image"
+                        src={testimonial.image}
+                        alt="alternative"
+                      />
                       <div className="card-body">
                         <div className="testimonial-text">{testimonial.text}</div>
-                        <div className="testimonial-author">{testimonial.author}</div>
+                        <div className="testimonial-author">
+                          {testimonial.author}
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <div className="swiper-button-next" style={{ 'display': 'none' }}></div>
-              <div className="swiper-button-prev" style={{ 'display': 'none' }}></div>
+              <div className="swiper-button-next" style={{ display: 'none' }}></div>
+              <div className="swiper-button-prev" style={{ display: 'none' }}></div>
             </div>
           </div>
         </div>
